@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">logo</a>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Contains</a></li>
+			</ul>
+		</header>
+		<div class="section">
+
+			<img src="./assets/icons/stars.png" id="stars" alt="" />
+			<img src="./assets/icons/moon.png" id="moon" alt="" />
+			<img
+				src="./assets/icons/mountains_behind.png"
+				id="mountains_behind"
+				alt=""
+				/>
+				<h2 id="text">Wepro/Madad</h2>
+				<a href="#sec" id="btn">Explore</a>
+				<img
+				src="./assets/icons/mountains_front.png"
+				id="mountains_front"
+				alt=""
+				/>
+			</div>
+		<!-- <div class="sec" id="sec"> -->
+			<main>
+				<section class="parallax bg">
+					<h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!</h1>
+				  </section>
+				<section class="parallaxx bgg">
+				  <h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!</h1>
+				</section>
+				<section class="parallaxxx bggg">
+					<h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!</h1>
+				  </section>
+				
+				<section class="no-parallax">
+				  <h1>Have a nice day!</h1>
+				</section>
+			  </main>
+		
+		<!-- </div> -->
+        <script>
+      let stars = document.querySelector('#stars')
+            let moon = document.querySelector('#moon')
+            let mountains_behind = document.querySelector('#mountains_behind')
+            let text = document.querySelector('#text')
+            let btn = document.querySelector('#btn')
+            let mountains_front = document.querySelector('#mountains_front')
+            let header = document.querySelector('header')
+      let discrib = document.querySelector('#h2')
+      let p = document.querySelector('#textt')
+
+
+			window.onscroll = () => {
+				let val = window.scrollY
+				
+				stars.style.left = val + "px"
+				stars.style.top = val + "px"
+				moon.style.top = val * 0.75 + "px"
+			    mountains_front.style.top = val * 0 + "px"
+                mountains_behind.style.top = val * 0.5 + "px"
+                moon.style.top = val * 0.75 + "px"
+               text.style.marginRight = val * 2.1  + "px"
+               text.style.marginTop = val * 0.95  + "px"
+               btn.style.marginTop = val  * 1.2 + "px"
+               header.style.top = val * 0.6 + "px"
+        // discrib.style.marginBottom = el.top = vp-center
+
+			}
+
+           
+        </script>
+	</body>
+</html>
